@@ -1,0 +1,302 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  padding:0%;
+  margin: 0%;
+  font-family: "Montserrat" !important;
+}
+
+
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+h2 {
+  color: #4958b0;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.7;
+  filter: opacity(80%);
+}
+
+.container {
+  padding: 3% 20%;
+}
+
+.row {
+  padding-top: 7%;
+  padding-left: 1.5%;
+}
+
+.header-image {
+  position: relative;
+  left: 40px;
+  object-fit: cover;
+}
+
+.profession {
+  color: #4958b0;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.see-arrow {
+  transform: rotate(91deg);
+  margin-left: 20px;
+}
+
+/* Navigation Bar */
+.nav-item {
+  padding: 0px 18px;
+}
+
+.navbar-nav {
+  padding-right: 5%;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 2rem !important;
+}
+
+.navbar-brand:hover {
+  color: #4958b0 !important;
+}
+
+.nav-link:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #4958b0;
+  color: white !important;
+}
+
+/* Skills */
+#skills {
+  margin: auto;
+  text-align: center;
+  padding: 5%;
+  font-weight: 400;
+  background-color: white;
+  max-width: 1140px;
+}
+
+.skill-set {
+  padding: 1% 10%;
+  background-color: #f9fcfb;
+}
+
+.fa-icon {
+  margin-bottom: 10%;
+  color: #8ab6d6;
+}
+
+.fa-icon:hover {
+  color: #4958b0;
+}
+
+/* Guaranties */
+#guaranties {
+  padding: 5% 5%;
+  text-align: center;
+  font-weight: 400;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.g-set {
+  padding: 3% 70px 0;
+  margin-bottom: 10px;
+  background-color: #f9fcfb;
+}
+
+.g-img {
+  margin-bottom: 10%;
+}
+
+/* Testimonials */
+#testimonials {
+  text-align: center !important;
+  background-color: #f9fcfb;
+  padding: 5% 5%;
+  font-weight: 500;
+  margin: auto;
+  max-width: 1130px;
+  justify-content: center !important;
+}
+
+.testimonials {
+  padding: 0% 15%;
+}
+
+
+
+.card-body:hover {
+    box-shadow:
+    5.3px 4.3px 3.6px rgba(0, 0, 0, 0.007),
+    14.5px 11.9px 10px rgba(0, 0, 0, 0.01),
+    35px 28.6px 24.1px rgba(0, 0, 0, 0.012),
+    116px 95px 80px rgba(0, 0, 0, 0.02)
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#testimonials .row {
+  margin-left: 3%;
+}
+
+
+
+
+/* Contact Me */
+#contact {
+  text-align: center;
+  padding: 5% 5%;
+  font-weight: 400;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.contact-box {
+  background-color: #f9fcfb;
+  height: fit-content;
+  width: 355px;
+  margin: auto;
+  margin-top: 5% !important;
+  border-radius: 5%;
+}
+
+#contact h3 {
+  color: #222831;
+  padding: 5% 0 3%;
+}
+
+form input {
+  width: 63%;
+  margin: 7% 0 0 2%;
+  border: none;
+  border-bottom: 1px solid rgb(65, 63, 63);
+  background-color: inherit;
+}
+
+textarea {
+  margin: 7% 0 5% 5% !important;
+  border: none;
+  border-bottom: 1px solid rgb(65, 63, 63);
+  background-color: inherit;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-bottom: 1.5px solid #007bff;
+}
+
+form button {
+  font-size: 14px;
+  margin-bottom: 4%;
+  padding: 3%;
+  text-transform: uppercase;
+}
+
+/* About Me */
+
+#aboutme {
+  text-align: center;
+  padding: 7% 5%;
+  font-weight: 400;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.me-text {
+  padding-top: 35px;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 1% 5%;
+  font-weight: 400;
+  background-color: #f9fcfb;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.footer-icon {
+  margin: 0px 15px 25px;
+}
+
+.footer-icon:hover {
+  transform: translateY(-4px);
+}
+
+.social-medias a {
+  color: inherit;
+}
+
+.dont-know {
+  color: #4958b0;
+}
+
+.be-far {
+  margin-top: 10%;
+}
+
+@media (max-width: 990px) {
+
+  .header-bloc {
+    width: 35%;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .profession {
+    margin-top: 8%;
+    font-size: 30px;
+    width: max-content;
+  }
+
+  .header-image {
+    width: 400px;
+    height: 380px;
+    position: relative;
+    left: -35px;
+    object-fit: scale-down;
+  }
+
+  .js-icon {
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .profession {
+    margin-top: 0%;
+    width: unset;
+  }
+
+  .header-bloc {
+    text-align: center;
+  }
+
+  .header-image {
+    margin: auto;
+  }
+}
