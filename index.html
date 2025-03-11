@@ -98,32 +98,42 @@
                 >
               </li>
 
-            <!-- STAGES -->
-
+              <!-- STAGES -->
 
               <li class="nav-item">
-
                 <div class="dropdown">
-                  <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false" href="#stages"
-                  ><i class="fa-regular fa-building"></i> &nbsp;Stages</a
-                >
-                
+                  <a
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#stages"
+                    ><i class="fa-regular fa-building"></i> &nbsp;Stages</a
+                  >
+
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="stage_first_year.html" target="_self">Première Année</a>
-                    <a class="dropdown-item" href="stage_second_year.html" target="_self">Deuxième Année</a>
+                    <a
+                      class="dropdown-item"
+                      href="stage_first_year.html"
+                      target="_self"
+                      >Première Année</a
+                    >
+                    <a
+                      class="dropdown-item"
+                      href="stage_second_year.html"
+                      target="_self"
+                      >Deuxième Année</a
+                    >
                   </div>
                 </div>
-
-
-                
               </li>
-
 
               <!-- FIN STAGES -->
 
               <li class="nav-item">
                 <a class="nav-link" href="veille_techno.html"
-                  ><i class="fa-solid fa-laptop-code"></i> &nbsp;Veille Technologique</a
+                  ><i class="fa-solid fa-laptop-code"></i> &nbsp;Veille
+                  Technologique</a
                 >
               </li>
               <li class="nav-item">
@@ -169,7 +179,7 @@
           <div class="col-lg-6 d-flex justify-content-center col-md-6">
             <img
               class="header-image"
-              src="images/photo.png"
+              src="images/ momo.png"
               width="350px"
               height="300px"
               alt=""
@@ -527,168 +537,323 @@
     <section id="projects">
       <h2>Projets</h2>
       <hr />
-      <div class="container">
-        <div class="row projects">
-          <div
-            class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-            data-aos-once="true"
-          >
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="images/blog-api.png" />
-              <div class="card-body">
-                <h5 class="card-title">Blog API</h5>
-                <p class="card-text">
-                  Une API REST simple pour un blog créé avec Express.js/Node.JS
-                  et EJS. Cette application vous permet d'effectuer des
-                  opérations CRUD (Créer, Lire, Mettre à jour, Supprimer) sur
-                  les articles de notre blog.
-                </p>
-                <p class="card-text">
-                  <span class="neon_glow"
-                    ><em>EJS - JavaScript (NODE.JS) - EXPRESS.JS</em></span
-                  >
-                </p>
-                <br />
-                <a
-                  href="https://github.com/Saar45/Blog-API"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >Voir sur GitHub</a
-                >
-              </div>
-            </div>
+
+      <!-- Projects Categories Accordion -->
+      <div class="accordion" id="projectsAccordion">
+        <!-- Projets en classe -->
+        <div class="card">
+          <div class="card-header" id="classProjectsHeading">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left category-title"
+                type="button"
+                data-toggle="collapse"
+                data-target="#classProjects"
+                aria-expanded="true"
+                aria-controls="classProjects"
+              >
+                <i class="fas fa-graduation-cap"></i> Projets en classe
+              </button>
+            </h2>
           </div>
 
           <div
-            class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-            data-aos-once="true"
+            id="classProjects"
+            class="collapse show"
+            aria-labelledby="classProjectsHeading"
+            data-parent="#projectsAccordion"
           >
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="images/Weather-project.png" />
-              <div class="card-body">
-                <h5 class="card-title">Site Météo</h5>
-                <p class="card-text">
-                  Le but de cette application web est de procurer des données
-                  météorologiques de n'importe quelle location, en temps réel
-                  grâce à l'API openweather.
-                </p>
-                <p class="card-text">
-                  <span class="neon_glow"
-                    ><em>CSS - NODE.JS - EXPRESS.JS</em></span
-                  >
-                </p>
-                <br />
-                <a
-                  href="https://github.com/Saar45/Weather-Web-App"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >Voir sur GitHub</a
+            <div class="card-body">
+              <div class="row projects">
+
+                <div
+                  class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
+                  data-aos-once="true"
                 >
+                  <div class="card" style="width: 18rem">
+                    <img class="card-img-top" src="images/py_script.png" />
+                    <div class="card-body">
+                      <h5 class="card-title">Script Automatisé</h5>
+                      <p class="card-text">
+                        Script conçu pour récupérer (Scraping) des flux RSS de
+                        sites Web ciblés et envoyer les derniers articles par
+                        e-mail. Il utilise principalement les librairies
+                        feedparser et pandas pour traiter et structurer les
+                        données.
+                      </p>
+                      <p class="card-text">
+                        <span class="neon_glow"><em>PYTHON</em></span>
+                      </p>
+                      <br />
+                      <a
+                        href="https://github.com/Saar45/Script_veille_technologique"
+                        target="_blank"
+                        class="btn btn-outline-primary"
+                        >Voir sur Github</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- ...other classroom projects... -->
+                <div
+                class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
+                data-aos="flip-up"
+                data-aos-duration="2000"
+                data-aos-once="true"
+              >
+                <div class="card" style="width: 18rem">
+                  <img class="card-img-top" src="images/hells_guitar.png" />
+                  <div class="card-body">
+                    <h5 class="card-title">Hell's Guitar</h5>
+                    <p class="card-text">
+                      Un mini site e-com réalisé en première année avec principalement PHP.
+                    </p>
+                    <p class="card-text">
+                      <span class="neon_glow"><em>PHP - MySQL</em></span>
+                    </p>
+                    <br />
+                    <a
+                      href="https://siomende.fr/sarr/hellsguitars/index.php"
+                      target="_blank"
+                      class="btn btn-outline-primary"
+                      >Voir la démo</a
+                    >
+                    <a
+                    href="https://siomende.fr/sarr/hellsguitars/index.php"
+                    target="_blank"
+                    class="btn btn-outline-dark mt-2"
+                    >En savoir plus</a
+                  >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
+                data-aos="flip-up"
+                data-aos-duration="2000"
+                data-aos-once="true"
+              >
+                <div class="card" style="width: 18rem">
+                  <img class="card-img-top" src="images/restbook.png" />
+                  <div class="card-body">
+                    <h5 class="card-title">API RESTful</h5>
+                    <p class="card-text">
+                      Restbook est un API RESTful qui permet de gérer des livres. Il a été réalisé en deuxième année. Ce projet a été crucial dans la réalisation de nos projets de fin d'année.
+                    </p>
+                    <p class="card-text">
+                      <span class="neon_glow"><em>PHP - MySQL</em></span>
+                    </p>
+                    <br />
+                    <a
+                      href="https://siomende.fr/sarr/hellsguitars/index.php"
+                      target="_blank"
+                      class="btn btn-outline-primary"
+                      >Voir sur GitHub</a
+                    >
+                    <a
+                    href="https://siomende.fr/sarr/hellsguitars/index.php"
+                    target="_blank"
+                    class="btn btn-outline-dark mt-2"
+                    >En savoir plus</a
+                  >
+                  </div>
+                </div>
+              </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <hr />
-
-          <div
-            class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-            data-aos-once="true"
-          >
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="images/Newsletter.png" />
-              <div class="card-body">
-                <h5 class="card-title">Newsletter</h5>
-                <p class="card-text">
-                  Un de mes premiers projets avec Node.JS, cette petite
-                  newsletter app encaisse les informations des utilisateurs et
-                  les envoie ensuite à notre emplacement de stockage mailchimp à
-                  travers leur API.
-                </p>
-                <p class="card-text">
-                  <span class="neon_glow"
-                    ><em>NODE.JS - EXPRESS.JS -BOOTSTRAP</em></span
-                  >
-                </p>
-                <br />
-                <a
-                  href="https://github.com/Saar45/Newsletter_API"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >Voir sur GitHub</a
-                >
-              </div>
-            </div>
+        <!-- Projets personnels -->
+        <div class="card">
+          <div class="card-header" id="personalProjectsHeading">
+            <h2 class="mb-0">
+              <button
+                class="btn btn-link btn-block text-left category-title collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#personalProjects"
+                aria-expanded="false"
+                aria-controls="personalProjects"
+              >
+                <i class="fas fa-code"></i> Projets personnels
+              </button>
+            </h2>
           </div>
-
           <div
-            class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-            data-aos-once="true"
+            id="personalProjects"
+            class="collapse"
+            aria-labelledby="personalProjectsHeading"
+            data-parent="#projectsAccordion"
           >
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="images/todo.png" />
-              <div class="card-body">
-                <h5 class="card-title">To-Do App</h5>
-                <p class="card-text">
-                  Une application web to-do simple qui vous permet de lister vos
-                  tâches journalières, de cocher celles que vous avez achevées
-                  etc. Elle est conçue en grande partie avec EJS.
-                </p>
-                <p class="card-text">
-                  <span class="neon_glow"
-                    ><em>NODE.JS - EXPRESS.JS - EJS</em></span
-                  >
-                </p>
-                <br />
-                <a
-                  href="https://to-do-cb7m.onrender.com/"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >Voir la démo</a
+            <div class="card-body">
+              <div class="row projects">
+                <div
+                  class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
+                  data-aos-once="true"
                 >
-              </div>
-            </div>
-          </div>
+                  <div class="card" style="width: 18rem">
+                    <img
+                      class="card-img-top"
+                      src="images/Weather-project.png"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Site Météo</h5>
+                      <p class="card-text">
+                        Le but de cette application web est de procurer des
+                        données météorologiques de n'importe quelle location, en
+                        temps réel grâce à l'API openweather.
+                      </p>
+                      <p class="card-text">
+                        <span class="neon_glow"
+                          ><em>CSS - NODE.JS - EXPRESS.JS</em></span
+                        >
+                      </p>
+                      <br />
+                      <a
+                        href="https://github.com/Saar45/Weather-Web-App"
+                        target="_blank"
+                        class="btn btn-outline-primary"
+                        >Voir sur GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- ...other personal projects... -->
+                <div
+                  class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
+                  data-aos-once="true"
+                >
+                <div class="card" style="width: 18rem">
+                  <img class="card-img-top" src="images/blog-api.png" />
+                  <div class="card-body">
+                    <h5 class="card-title">Blog API</h5>
+                    <p class="card-text">
+                      Une API REST simple pour un blog créé avec
+                      Express.js/Node.JS et EJS. Cette application vous permet
+                      d'effectuer des opérations CRUD (Créer, Lire, Mettre à
+                      jour, Supprimer) sur les articles de notre blog.
+                    </p>
+                    <p class="card-text">
+                      <span class="neon_glow"
+                        ><em
+                          >EJS - JavaScript (NODE.JS) - EXPRESS.JS</em
+                        ></span
+                      >
+                    </p>
+                    <br />
+                    <a
+                      href="https://github.com/Saar45/Blog-API"
+                      target="_blank"
+                      class="btn btn-outline-primary"
+                      >Voir sur GitHub</a
+                    >
+                  </div>
+                </div>
+                </div>
 
-          <div
-            class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
-            data-aos="flip-up"
-            data-aos-duration="2000"
-            data-aos-once="true"
-          >
-            <div class="card" style="width: 18rem">
-              <img class="card-img-top" src="images/py_script.png" />
-              <div class="card-body">
-                <h5 class="card-title">Script Automatisé</h5>
-                <p class="card-text">
-                  Script conçu pour récupérer (Scraping) des flux RSS de sites
-                  Web ciblés et envoyer les derniers articles par e-mail. Il
-                  utilise principalement les librairies feedparser et pandas
-                  pour traiter et structurer les données.
-                </p>
-                <p class="card-text">
-                  <span class="neon_glow"><em>PYTHON</em></span>
-                </p>
-                <br />
-                <a
-                  href="https://github.com/Saar45/Script_veille_technologique"
-                  target="_blank"
-                  class="btn btn-outline-primary"
-                  >Voir sur Github</a
+                <div
+                  class="col-lg-4 d-flex justify-content-md-center justify-content-lg-center justify-content-sm-center mt-4"
+                  data-aos="flip-up"
+                  data-aos-duration="2000"
+                  data-aos-once="true"
                 >
+                  <div class="card" style="width: 18rem">
+                    <img class="card-img-top" src="images/todo.png" />
+                    <div class="card-body">
+                      <h5 class="card-title">To-Do App</h5>
+                      <p class="card-text">
+                        Une application web to-do simple qui vous permet de
+                        lister vos tâches journalières, de cocher celles que
+                        vous avez achevées etc. Elle est conçue en grande partie
+                        avec EJS.
+                      </p>
+                      <p class="card-text">
+                        <span class="neon_glow"
+                          ><em>NODE.JS - EXPRESS.JS - EJS</em></span
+                        >
+                      </p>
+                      <br />
+                      <a
+                        href="https://to-do-cb7m.onrender.com/"
+                        target="_blank"
+                        class="btn btn-outline-primary"
+                        >Voir la démo</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Certifications -->
+    <section id="certifications">
+      <h2>Mes Certifications</h2>
+      <hr />
+      <div class="certification-grid">
+        <!-- Certification 1 -->
+        <div
+          class="certification-card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <div class="certification-body">
+            <h3 class="certification-title">MOOC DE L'ANSSI</h3>
+            <p class="certification-date">Obtenue le 15 Mars 2024</p>
+            <div class="certification-actions">
+              <a
+                href="certifications/mooc-anssi.pdf"
+                class="pdf-link"
+                data-pdf="certifications/mooc-anssi.pdf"
+              >
+                <i class="fas fa-external-link-alt link-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certification 2 -->
+        <div
+          class="certification-card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-once="true"
+        >
+          <div class="certification-body">
+            <h3 class="certification-title">PIX</h3>
+            <p class="certification-date">Obtenue le 20 Janvier 2024</p>
+            <div class="certification-actions">
+              <a
+                href="certifications/attestation-pix-20241216.pdf"
+                class="pdf-link"
+                data-pdf="certifications/attestation-pix-20241216.pdf"
+              >
+                <i class="fas fa-external-link-alt link-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PDF Modal -->
+    <div class="pdf-modal" id="pdfModal">
+      <div class="pdf-modal-content">
+        <span class="close-pdf-modal">&times;</span>
+        <iframe id="pdfViewer" src="" frameborder="0"></iframe>
+      </div>
+    </div>
 
     <!-- Contact Me -->
     <section
@@ -781,9 +946,7 @@
             <a href="https://twitter.com/saar_naby" target="_blank"
               ><i class="footer-icon fab fa-twitter"></i
             ></a>
-            <a
-              href="https://www.linkedin.com/in/💻-mouhamed-sarr-4b7b05232"
-              target="_blank"
+            <a href="https://www.linkedin.com/in/sarrmouhamed/" target="_blank"
               ><i class="footer-icon fab fa-linkedin"></i
             ></a>
           </div>
@@ -804,5 +967,110 @@
         <br />
       </div>
     </section>
+
+    <div class="project-image-modal" id="imageModal">
+      <span class="close-modal">&times;</span>
+      <img id="modalImage" src="" alt="Project Preview" />
+    </div>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+      // Image Modal functionality
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const closeBtn = document.getElementsByClassName("close-modal")[0];
+
+      // Add click event to all project images
+      document.querySelectorAll(".card-img-top").forEach((img) => {
+        img.onclick = function () {
+          modal.classList.add("show");
+          modalImg.src = this.src;
+        };
+      });
+
+      // Close modal when clicking the X
+      closeBtn.onclick = function () {
+        modal.classList.remove("show");
+      };
+
+      // Close modal when clicking outside the image
+      modal.onclick = function (e) {
+        if (e.target === modal) {
+          modal.classList.remove("show");
+        }
+      };
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && modal.classList.contains("show")) {
+          modal.classList.remove("show");
+        }
+      });
+
+      // Add this to your existing scripts
+      document.addEventListener("DOMContentLoaded", function () {
+        const modal = document.getElementById("pdfModal");
+        const pdfViewer = document.getElementById("pdfViewer");
+        const closeBtn = document.getElementsByClassName("close-pdf-modal")[0];
+
+        // Open PDF modal
+        document.querySelectorAll(".pdf-link").forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const pdfUrl = this.getAttribute("data-pdf");
+            pdfViewer.src = pdfUrl;
+            modal.classList.add("show");
+            document.body.style.overflow = "hidden";
+          });
+        });
+
+        // Close modal functions
+        const closeModal = () => {
+          modal.classList.remove("show");
+          pdfViewer.src = "";
+          document.body.style.overflow = "auto";
+        };
+
+        closeBtn.onclick = closeModal;
+
+        modal.onclick = function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        };
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && modal.classList.contains("show")) {
+            closeModal();
+          }
+        });
+      });
+
+      // Theme switcher functionality
+      const themeSwitch = document.getElementById("themeSwitch");
+      const themeIcon = themeSwitch.querySelector("i");
+
+      // Check for saved theme preference
+      const savedTheme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      updateThemeIcon(savedTheme);
+
+      themeSwitch.addEventListener("click", () => {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+        updateThemeIcon(newTheme);
+      });
+
+      function updateThemeIcon(theme) {
+        themeIcon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+      }
+    </script>
   </body>
 </html>

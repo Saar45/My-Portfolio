@@ -1,0 +1,127 @@
+.internship-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.internship-section h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.company-info {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.company-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
+.content-section {
+    margin: 6rem 0;  /* Increased from 4rem to 6rem */
+    padding: 2rem;   /* Added padding */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.content-section {
+    margin-bottom: 8rem !important;  /* Added extra margin between consecutive sections */
+}
+
+.content-section h3 {
+    color: #333;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+}
+
+.content-section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.content-section li {
+    margin-bottom: 0.5rem;
+}
+
+.internship-section .duration {
+    font-style: italic !important;
+    color: #666;
+}
+
+/* Accordion Styling */
+.accordion .card {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+
+.accordion .card-header {
+    background-color: #f8f9fa;
+    padding: 0;
+    border-radius: 7px;
+}
+
+.accordion .btn-link {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+.accordion .btn-link:hover {
+    color: #007bff;
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+.accordion .card-body {
+    padding: 2rem;
+}
+
+.task-details h5 {
+    color: #007bff;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.task-details ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.task-details li {
+    margin-bottom: 0.75rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .internship-section {
+        padding: 1rem;
+    }
+    
+    .company-info {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    .content-section {
+        margin: 4rem 0;
+        padding: 1.5rem;
+    }
+    
+    .content-section + .content-section {
+        margin-top: 6rem !important;
+    }
+}

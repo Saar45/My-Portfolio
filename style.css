@@ -1,7 +1,118 @@
+/* Add at the very top of the file, before any other CSS */
+:root {
+    /* Light theme (default) */
+    --background: #f3f6ff;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --accent: #4958b0;
+    --card-bg: #fff;
+    --border: #ddd;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --navbar-bg: #fff;
+}
+
+[data-theme="dark"] {
+    --background: #1a1a1a;
+    --text-primary: #fff;
+    --text-secondary: #ccc;
+    --accent: #7b8cff;
+    --card-bg: #2d2d2d;
+    --border: #444;
+    --shadow: rgba(255, 255, 255, 0.1);
+    --navbar-bg: #2d2d2d;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+:root {
+    --bg-color: #f3f6ff;
+    --text-color: #333;
+    --text-muted: #666;
+    --card-bg: #fff;
+    --card-text: #333;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-shadow: rgba(0, 0, 0, 0.2);
+    --nav-bg: #fff;
+    --section-bg: #f9fcfb;
+    --border-color: #ddd;
+    --heading-color: #4958b0;
+    --footer-bg: #f9fcfb;
+    --link-color: #4958b0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #fff;
+    --text-muted: #ccc;
+    --card-bg: #2d2d2d;
+    --card-text: #fff;
+    --shadow-color: rgba(255, 255, 255, 0.1);
+    --hover-shadow: rgba(255, 255, 255, 0.2);
+    --nav-bg: #2d2d2d;
+    --section-bg: #242424;
+    --border-color: #444;
+    --heading-color: #7b8cff;
+    --footer-bg: #2d2d2d;
+    --link-color: #7b8cff;
+}
+
+[data-theme="dark"] {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] p,
+[data-theme="dark"] .card-text,
+[data-theme="dark"] .method-card li,
+[data-theme="dark"] .certification-date,
+[data-theme="dark"] .theme-description,
+[data-theme="dark"] .workspace-caption,
+[data-theme="dark"] .duration,
+[data-theme="dark"] .school {
+    color: var(--text-muted);
+}
+
+[data-theme="dark"] .skill-set,
+[data-theme="dark"] .g-set,
+[data-theme="dark"] .formation_card,
+[data-theme="dark"] .card,
+[data-theme="dark"] .method-card,
+[data-theme="dark"] .certification-card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] .certification-title,
+[data-theme="dark"] .nav-link,
+[data-theme="dark"] .navbar-brand {
+    color: var(--heading-color) !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: var(--card-bg);
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+    background-color: var(--section-bg);
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+    color: var(--text-color);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] #footer {
+    background-color: var(--footer-bg);
+}
 
 body {
   box-sizing: border-box !important;
@@ -9,7 +120,21 @@ body {
   margin: 0;
   outline: none;
   font-family: "Montserrat" !important;
-  background-color: #f3f6ff !important;
+  background-color: var(--background) !important;
+  color: var(--text-primary);
+}
+
+.card, .method-card, .certification-card, .formation_card, .skill-set {
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+}
+
+p, .card-text, .method-card li {
+    color: var(--text-secondary);
+}
+
+h2, h3, h4, .nav-link, .navbar-brand {
+    color: var(--accent);
 }
 
 h1 {
@@ -60,6 +185,8 @@ p {
 
 .header-image {
   max-width: min-content;
+  background: transparent;
+  mix-blend-mode: multiply; /* This helps with dark backgrounds */
 }
 
 .header-image:hover {
@@ -250,6 +377,56 @@ hr {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
+/* Project Categories Styles */
+.project-category {
+    margin-top: 4rem;
+}
+
+.category-title {
+    color: #4958b0;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #efe1d1;
+    display: inline-block;
+}
+
+.project-category:first-of-type {
+    margin-top: 2rem;
+}
+
+/* Project Accordion Styles */
+#projectsAccordion .card {
+    border: none;
+    background: transparent;
+    margin-bottom: 1rem;
+    transform: none !important; /* Prevent any transform */
+}
+
+#projectsAccordion .card:hover {
+    transform: none !important; /* Prevent any transform on hover */
+    box-shadow: none; /* Remove any shadow effect */
+}
+
+#projectsAccordion .category-title {
+    color: #4958b0;
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+#projectsAccordion .category-title:hover {
+    text-decoration: none;
+    color: #4958b0; /* Keep the same color on hover */
+}
+
+/* Keep other hover effects for project cards inside the accordion */
+#projectsAccordion .card .card:hover {
+    transform: scale(1.07) !important;
+    transition: 0.3s ease-in;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
 /* Contact Me */
 #contact {
   text-align: center;
@@ -429,5 +606,525 @@ form button {
 .social-medias {
   font-size: small;
 }
+}
+
+/* Internship Page Specific Styles */
+body section.internship-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+body section.internship-section h1 {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+body section.internship-section .company-info {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body section.internship-section .company-logo {
+    max-width: 150px;  /* Reduced from 200px */
+    height: auto;
+    margin: 1rem 2rem 1rem 0;  /* Added margin-right of 2rem */
+    display: block;
+}
+
+body section.internship-section .content-section {
+    margin: 6rem 0;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 8rem !important;
+}
+
+body section.internship-section .content-section h3 {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #007bff;
+}
+
+body section.internship-section .content-section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+body section.internship-section .content-section li {
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+body section.internship-section .duration {
+    font-style: italic !important;
+    color: #666;
+}
+
+/* Accordion Specific Styles */
+body section.internship-section .accordion .card {
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 8px;
+}
+
+body section.internship-section .accordion .card-header {
+    background-color: #f8f9fa;
+    padding: 0;
+    border-radius: 7px;
+}
+
+body section.internship-section .accordion .btn-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+
+body section.internship-section .accordion .btn-link:hover {
+    color: #007bff;
+    background-color: #f0f0f0;
+    text-decoration: none;
+}
+
+body section.internship-section .accordion .card-body {
+    padding: 2rem;
+    color: var(--text-color);
+}
+
+body section.internship-section .task-details h5 {
+    color: #007bff;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+body section.internship-section .task-details ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+body section.internship-section .task-details li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
+
+/* Workspace Section Styles */
+body section.internship-section .workspace-container {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+body section.internship-section .workspace-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+body section.internship-section .workspace-caption {
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments with higher specificity */
+@media (max-width: 768px) {
+    body section.internship-section {
+        padding: 1rem;
+    }
+    
+    body section.internship-section .company-info {
+        padding: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    body section.internship-section .content-section {
+        margin: 4rem 0;
+        padding: 1.5rem;
+    }
+}
+
+/* Competences Boxes Styles */
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.competence-box {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.competence-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.competence-box i {
+    color: #28a745;
+    font-size: 1.2rem;
+}
+
+.competence-box span {
+    font-size: 0.9rem;
+    color: #495057;
+    font-weight: 500;
+}
+
+/* Project Image Modal Styles */
+.project-image-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+}
+
+.project-image-modal img {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.project-image-modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Make project images clickable */
+.card-img-top {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.card-img-top:hover {
+    opacity: 0.9;
+}
+
+/* Certifications Section Styles */
+#certifications {
+    text-align: center;
+    padding: 5% 5%;
+    font-weight: 400;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.certification-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.certification-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.certification-body {
+    padding: 1.5rem;
+}
+
+.certification-title {
+    color: #4958b0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.certification-date {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Updated Certification Styles */
+.certification-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.certification-actions {
+    margin-top: 1.5rem;
+    text-align: right;
+}
+
+.pdf-link {
+    color: #4958b0;
+    font-size: 1.5rem;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.pdf-link:hover {
+    color: #614ad3;
+}
+
+.cert-icon {
+    margin-right: 0.5rem;
+}
+
+.link-icon {
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    right: -0.5rem;
+}
+
+/* PDF Modal Styles */
+.pdf-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 2rem;
+}
+
+.pdf-modal.show {
+    display: block;
+}
+
+.pdf-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.close-pdf-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-pdf-modal:hover {
+    color: #999;
+}
+
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Veille Technologique Styles */
+.veille-section {
+    max-width: 1140px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.veille-section h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #4958b0;
+}
+
+.veille-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.theme-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.methodology-section {
+    margin-bottom: 4rem;
+}
+
+.methodology-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.method-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+}
+
+.method-card i {
+    font-size: 2rem;
+    color: #4958b0;
+    margin-bottom: 1rem;
+}
+
+.method-card h4 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.method-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.method-card li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.genially-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.genially-embed {
+    margin-top: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.latest-news {
+    margin-top: 4rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .methodology-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .genially-embed iframe {
+        height: 400px;
+    }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    background: var(--card-bg);
+    color: var(--text-primary);
+    box-shadow: 0 2px 5px var(--shadow);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+.theme-toggle i {
+    font-size: 1.2rem;
+}
+
+/* Update existing components for dark mode */
+.card, .method-card, .certification-card {
+    background: var(--card-bg);
+}
+
+.card-text, .method-card li {
+    color: var(--text-color);
 }
 
