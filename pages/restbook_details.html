@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestBook API - Détails du Projet</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet" />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fd4532003.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- JS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section id="title">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="../index.html">Accueil</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav navbar-expand-lg ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="../index.html"
+                        ><i class="fa-solid fa-house-user"></i> &nbsp;Accueil</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html#skills"
+                        ><i class="fa-solid fa-gear"></i>&nbsp;Compétences</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html#projects"
+                        ><i class="fa-solid fa-bars-progress"></i> &nbsp;Projets</a
+                      >
+                    </li>
+      
+                    <!-- STAGES -->
+      
+                    <li class="nav-item">
+                      <div class="dropdown">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                          href="#stages"
+                          ><i class="fa-regular fa-building"></i> &nbsp;Stages</a
+                        >
+      
+                        <div class="dropdown-menu">
+                          <a
+                            class="dropdown-item"
+                            href="stage_first_year.html"
+                            target="_self"
+                            >Première Année</a
+                          >
+                          <a
+                            class="dropdown-item"
+                            href="stage_second_year.html"
+                            target="_self"
+                            >Deuxième Année</a
+                          >
+                        </div>
+                      </div>
+                    </li>
+      
+                    <!-- FIN STAGES -->
+      
+                    <li class="nav-item">
+                      <a class="nav-link" href="veille_techno.html"
+                        ><i class="fa-solid fa-laptop-code"></i> &nbsp;Veille
+                        Technologique</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../index.html#contact"
+                        ><i class="fa-regular fa-envelope"></i> &nbsp;Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <a href="../index.html#projects" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Retour aux projets
+        </a>
+        <section class="internship-section">
+            <h1>RestBook API</h1>
+            <hr>
+            <div class="project-details-container">
+                <div class="container mt-5">
+                    <div class="row mb-5">
+                        <div class="col-md-10 offset-md-1">
+                            <div class="project-card" data-aos="fade-up">
+                                <div class="project-overview">
+                                    <h2>Vue d'ensemble</h2>
+                                    <p>RestBook est une API RESTful développée en PHP pour la gestion d'une bibliothèque numérique. Ce projet, réalisé en deuxième année de BTS SIO, met en œuvre les principes REST pour permettre la gestion complète des ressources livres via des endpoints HTTP.</p>
+                                    
+                                    <div class="project-images mt-4">
+                                        <img src="../assets/images/restbook(1).png" alt="API Documentation" class="img-fluid mb-3" onclick="openImageModal(this.src)">
+                                        <img src="../assets/images/restbook(2).png" alt="Endpoints" class="img-fluid mb-3" onclick="openImageModal(this.src)">
+                                        <img src="../assets/images/restbook(3).png" alt="Exemple de réponse" class="img-fluid" onclick="openImageModal(this.src)">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card" data-aos="fade-up">
+                                <div class="technical-details">
+                                    <h2>Détails Techniques</h2>
+                                    <ul>
+                                        <li>Architecture REST complète</li>
+                                        <li>Utilisation de l'ORM eloquent avec CodeIgniter</li>
+                                        <li>Gestion des requêtes et réponses HTTP</li>
+                                        <li>Endpoints pour la gestion des livres, auteurs et utilisateurs</li>
+                                        <li>Authentification JWT</li>
+                                        <li>Gestion des erreurs HTTP standardisée</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="project-card" data-aos="fade-up">
+                                <div class="skills-developed">
+                                    <h2>Compétences Développées</h2>
+                                    <div class="competences-grid">
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Gérer le patrimoine informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Répondre aux incidents et aux demandes d'assistance et d'évolution</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Mettre à disposition des utilisateurs un service informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Travailler en mode projet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="imageModal">
+        <img id="modalImage" src="" alt="Enlarged image">
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="social-medias haha col-lg-6">
+              <span class="dont-know">#Social networks:</span>
+              <a href="https://www.instagram.com/nabysarr16/" target="_blank"
+                ><i class="footer-icon fab fa-instagram"></i
+              ></a>
+              <a href="https://twitter.com/saar_naby" target="_blank"
+                ><i class="footer-icon fab fa-twitter"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sarrmouhamed/" target="_blank"
+                ><i class="footer-icon fab fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="mail haha col-lg-6">
+              <span class="business_account">Compte professionnel:</span>
+              nabysarr16@gmail.com
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+          <p>
+            @ <span id="currentYear"></span> -
+            <span class="neon_glow">Mouhamed Sarr</span>
+          </p>
+          <em>"Working in the dark to serve in light" 👊🏽</em>
+          <a href="mentions_legales.html" target="_blank" class="legal-link">Mentions légales</a>
+          <br />
+          <br />
+        </div>
+      </section>
+
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script>
+        AOS.init();
+        
+        // Image Modal functionality
+        function openImageModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = imgSrc;
+            modal.classList.add('show');
+            
+            // Close on click outside
+            modal.onclick = function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                }
+            }
+            
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                }
+            });
+        }
+
+        // Theme toggle functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeSwitch = document.getElementById("themeToggle");
+            const themeIcon = themeSwitch.querySelector("i");
+
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            updateThemeIcon(savedTheme);
+
+            themeSwitch.addEventListener("click", () => {
+                const currentTheme = document.documentElement.getAttribute("data-theme");
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+                document.documentElement.setAttribute("data-theme", newTheme);
+                localStorage.setItem("theme", newTheme);
+                updateThemeIcon(newTheme);
+            });
+
+            function updateThemeIcon(theme) {
+                themeIcon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+            }
+        });
+    </script>
+</body>
+</html>

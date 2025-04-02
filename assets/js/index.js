@@ -10,11 +10,11 @@ if (textAnim) {
   typewriter
     .start()
     .pauseFor(200)
-    .typeString("Développeur Web")
+    .typeString("Développeur Web & Mobile")
     .pauseFor(700)
-    .deleteChars(15)
-    .changeDeleteSpeed(70)
-    .typeString("Web Designer")
+    .deleteChars(24)
+    .changeDeleteSpeed(80)
+    .typeString("Étudiant en BTS SIO SLAM 2025")
     .pauseFor(500);
 }
 

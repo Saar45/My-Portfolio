@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Première Année</title>
+    
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet" />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fd4532003.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    
+    <!-- JS Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <section id="title">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="../index.html">Sarr.dev</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav navbar-expand-lg ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html"><i class="fa-solid fa-house-user"></i> &nbsp;Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#skills"><i class="fa-solid fa-gear"></i>&nbsp;Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#projects"><i class="fa-solid fa-bars-progress"></i> &nbsp;Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle active" role="button" data-toggle="dropdown" aria-expanded="false" href="#stages">
+                                    <i class="fa-regular fa-building"></i> &nbsp;Stages
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item active" href="stage_first_year.html">Première Année</a>
+                                    <a class="dropdown-item" href="stage_second_year.html">Deuxième Année</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="veille_techno.html"><i class="fa-solid fa-laptop-code"></i> &nbsp;Veille Technologique</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact"><i class="fa-regular fa-envelope"></i> &nbsp;Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="internship-section">
+            <h1>Stage de Première Année</h1>
+            <hr>
+            <div class="company-info">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <img src="../assets/images/college.png" alt="College logo" class="company-logo img-fluid">
+                    </div>
+                    <div class="col-md-9">
+                        <h2>Collège André Chamson de Meyrueis</h2>
+                        <p class="duration">Du 03 Juin au 05 Juillet 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Mon espace de travail</h3>
+                <div class="workspace-container">
+                    <img src="../assets/images/IMG_5233.png" alt="Mon espace de travail" class="workspace-image img-fluid">
+                    <p class="workspace-caption mt-3">Mon espace de travail secondaire au collège pendant mon stage</p>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3>Contexte du stage</h3>
+                <p>Le stage s’est déroulé au Collège André Chamson, un établissement situé à Meyrueis. Cet établissement scolaire accueille des élèves du secondaire et met un point d’honneur à favoriser leur réussite académique et leur orientation.
+                </p>
+            </div>
+
+            <div class="content-section">
+                <h3>Objectifs</h3>
+               <p>L’objectif principal du stage était d’intégrer une API REST permettant aux élèves de collaborer via un réseau social éducatif. Cette plateforme offrait aux élèves la possibilité de créer des cartes mentales, travailler en équipe et partager leurs idées, dans le but de les accompagner dans leur processus d’orientation scolaire et professionnelle.
+            </p> 
+            </div>
+
+            <div class="content-section">
+                <h3>Tâches réalisées</h3>
+                <div class="accordion" id="tasksAccordion">
+                    <!-- Task 1 -->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    Analyse et compréhension des besoins
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-parent="#tasksAccordion">
+                            <div class="card-body">
+                                <div class="task-details">
+                                    <h5>Description</h5>
+                                    <p>La première étape consistait à comprendre les besoins spécifiques du collège en matière de réseau social éducatif. J'ai mené des entretiens avec les enseignants et étudié les cas d'utilisation potentiels pour les élèves. Cette phase a permis de définir les fonctionnalités clés comme la création de cartes mentales collaboratives et le partage de ressources d'orientation.</p>
+                                    <br>
+                                    <div class="task-gallery">
+                                        <img src="../assets/images/concept-stemic.png" alt="Concept" onclick="openImageModal(this.src)">
+                                        <img src="../assets/images/example-stemic.png" alt="Notes et diagrammes" onclick="openImageModal(this.src)">
+                                    </div>
+                                    <br>
+                                    <h5>Compétences acquises</h5>
+                                    <div class="competences-grid">
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Gérer le patrimoine informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Travailler en mode projet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Task 2 -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                                    Intégration de l'API REST
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#tasksAccordion">
+                            <div class="card-body">
+                                <div class="task-details">
+                                    <h5>Description</h5>
+                                    <p>J'ai travaillé sur l'intégration de l'API REST existante avec l'application Next.js. Le travail consistait principalement à implémenter les requêtes API pour les différentes fonctionnalités de l'application : gestion des utilisateurs (authentification), création et synchronisation des cartes mentales. L'objectif était d'assurer une communication fluide entre le frontend et le backend déjà en place.</p>
+                                    
+                                    <div class="task-gallery">
+                                        <img src="images/api1.jpg" alt="Documentation API" onclick="openImageModal(this.src)">
+                                        <img src="images/api2.jpg" alt="Tests Postman" onclick="openImageModal(this.src)">
+                                        <img src="images/api3.jpg" alt="Schéma base de données" onclick="openImageModal(this.src)">
+                                    </div>
+                                    
+                                    <h5>Compétences acquises</h5>
+                                    <div class="competences-grid">
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Gérer le patrimoine informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Répondre aux incidents et aux demandes d'assistance et d'évolution</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Mettre à disposition des utilisateurs un service informatique</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Task - Backend Modifications -->
+                    <div class="card">
+                        <div class="card-header" id="headingBackend">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseBackend">
+                                    Correction et optimisation de l'API
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseBackend" class="collapse" data-parent="#tasksAccordion">
+                            <div class="card-body">
+                                <div class="task-details">
+                                    <h5>Description</h5>
+                                    <p>Lors de l'intégration, j'ai identifié plusieurs problèmes avec les requêtes PATCH de l'API. Ces requêtes étaient essentielles pour la mise à jour collaborative des cartes mentales. Après analyse, j'ai découvert que le format des données envoyées ne correspondait pas à ce que l'API attendait.
+                                    <br><br>
+                                    En collaboration avec le stagiaire qui avait implementé l'API, j'ai modifié la structure des endpoints PATCH pour qu'ils acceptent les mises à jour partielles des cartes mentales. Cela incluait:
+                                    <p><ul>
+                                        <li>Modification du middleware de validation des requêtes</li>
+                                        <li>Ajout de nouveaux champs dans le schéma de données</li>
+                                        <li>Modification des syntaxes de recupération des champs requis</li>
+                                    </ul></p>
+                                    </p>
+                                    
+                                    <div class="task-gallery">
+                                        <img src="images/backend-code1.jpg" alt="Code API avant modification" onclick="openImageModal(this.src)">
+                                        <img src="images/backend-code2.jpg" alt="Code API après modification" onclick="openImageModal(this.src)">
+                                        <img src="images/postman-test.jpg" alt="Tests Postman" onclick="openImageModal(this.src)">
+                                    </div>
+                                    
+                                    <h5>Compétences acquises</h5>
+                                    <div class="competences-grid">
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Gérer le patrimoine informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Répondre aux incidents et aux demandes d'assistance et d'évolution</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Travailler en mode projet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Task 3 -->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree">
+                                    Développement des fonctionnalités collaboratives
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-parent="#tasksAccordion">
+                            <div class="card-body">
+                                <div class="task-details">
+                                    <h5>Description</h5>
+                                    <p>J'ai développé les fonctionnalités permettant aux élèves de créer et partager des cartes mentales en temps réel. Cela comprenait la mise en place d'un système de notification pour les modifications collaboratives et un mécanisme de résolution des conflits d'édition.</p>
+                                    
+                                    <div class="task-gallery">
+                                        <img src="images/collab1.jpg" alt="Interface collaboration" onclick="openImageModal(this.src)">
+                                        <img src="images/collab2.jpg" alt="Système temps réel" onclick="openImageModal(this.src)">
+                                        <img src="images/collab3.jpg" alt="Tests fonctionnels" onclick="openImageModal(this.src)">
+                                    </div>
+                                    
+                                    <h5>Compétences acquises</h5>
+                                    <div class="competences-grid">
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Mettre à disposition des utilisateurs un service informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Travailler en mode projet</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Task 4 -->
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour">
+                                    Test avec un collégien
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-parent="#tasksAccordion">
+                            <div class="card-body">
+                                <div class="task-details">
+                                    <h5>Description</h5>
+                                    <p>Un élève du collège a participé à une session de test de l'application. Il a créé une carte mentale sur un sujet de son choix, ce qui nous a permis d'observer l'utilisation réelle de l'interface. Le retour a été très positif : il a trouvé le design intuitif et l'ergonomie adaptée à un usage scolaire. La simplicité de l'interface a particulièrement été appréciée, permettant une prise en main rapide sans formation approfondie.</p>
+                                    
+                                    <div class="task-gallery">
+                                        <img src="images/student-test1.jpg" alt="Test avec un élève" onclick="openImageModal(this.src)">
+                                        <img src="images/student-test2.jpg" alt="Carte mentale créée" onclick="openImageModal(this.src)">
+                                        <img src="images/student-test3.jpg" alt="Feedback" onclick="openImageModal(this.src)">
+                                    </div>
+                                    
+                                    <h5>Compétences acquises</h5>
+                                    <div class="competences-grid">
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Mettre à disposition des utilisateurs un service informatique</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Répondre aux incidents et aux demandes d'assistance et d'évolution</span>
+                                        </div>
+                                        <div class="competence-box">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Développer la présence en ligne de l'organisation</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="social-medias haha col-lg-6">
+                    <span class="dont-know">#Social networks:</span>
+                    <a href="https://www.instagram.com/nabysarr16/" target="_blank"><i class="footer-icon fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/saar_naby" target="_blank"><i class="footer-icon fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/sarrmouhamed/" target="_blank"><i class="footer-icon fab fa-linkedin"></i></a>
+                </div>
+                <div class="mail haha col-lg-6">
+                    <span class="business_account">Compte professionnel:</span>
+                    nabysarr16@gmail.com
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+            <p>@ <span id="currentYear"></span> - <span class="neon_glow">Mouhamed Sarr</span></p>
+            <em>"Working in the dark to serve in light" 👊🏽</em>
+            <a href="mentions_legales.html" target="_blank" class="legal-link">Mentions légales</a>
+            <br /><br />
+        </div>
+    </section>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Add this before closing body tag -->
+    <div class="image-modal" id="imageModal">
+        <img id="modalImage" src="" alt="Enlarged image">
+    </div>
+
+    <script>
+        function openImageModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = imgSrc;
+            modal.classList.add('show');
+            
+            // Close on click outside
+            modal.onclick = function(e) {
+                if (e.target === modal) {
+                    modal.classList.remove('show');
+                }
+            }
+            
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                }
+            });
+        }
+
+        // Theme toggle functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            const themeSwitch = document.getElementById("themeToggle");
+            const themeIcon = themeSwitch.querySelector("i");
+
+            // Check for saved theme preference
+            const savedTheme = localStorage.getItem("theme") || "light";
+            document.documentElement.setAttribute("data-theme", savedTheme);
+            updateThemeIcon(savedTheme);
+
+            themeSwitch.addEventListener("click", () => {
+                const currentTheme = document.documentElement.getAttribute("data-theme");
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+                document.documentElement.setAttribute("data-theme", newTheme);
+                localStorage.setItem("theme", newTheme);
+                updateThemeIcon(newTheme);
+            });
+
+            function updateThemeIcon(theme) {
+                themeIcon.className = theme === "dark" ? "fas fa-sun" : "fas fa-moon";
+            }
+        });
+    </script>
+</body>
+</html>

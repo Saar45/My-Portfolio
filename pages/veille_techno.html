@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet" />
 
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -25,27 +25,27 @@
     
     <!-- JS Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="index.js" defer></script>
+    <script src="../assets/js/index.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <section id="title">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Sarr.dev/></a>
+                <a class="navbar-brand" href="../index.html">Sarr.dev</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav navbar-expand-lg ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html"><i class="fa-solid fa-house-user"></i> &nbsp;Accueil</a>
+                            <a class="nav-link" href="../index.html"><i class="fa-solid fa-house-user"></i> &nbsp;Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#skills"><i class="fa-solid fa-gear"></i>&nbsp;Compétences</a>
+                            <a class="nav-link" href="../index.html#skills"><i class="fa-solid fa-gear"></i>&nbsp;Compétences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#projects"><i class="fa-solid fa-bars-progress"></i> &nbsp;Projets</a>
+                            <a class="nav-link" href="../index.html#projects"><i class="fa-solid fa-bars-progress"></i> &nbsp;Projets</a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -62,7 +62,7 @@
                             <a class="nav-link active" href="veille_techno.html"><i class="fa-solid fa-laptop-code"></i> &nbsp;Veille Technologique</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact"><i class="fa-regular fa-envelope"></i> &nbsp;Contact</a>
+                            <a class="nav-link" href="../index.html#contact"><i class="fa-regular fa-envelope"></i> &nbsp;Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -90,7 +90,7 @@
                     <div class="methodology-cards">
                         <div class="method-card" data-aos="fade-up" data-aos-delay="100">
                             <i class="fas fa-rss"></i>
-                            <h4>Sources</h4>
+                            <h4>Top Sources</h4>
                             <ul>
                                 <li>Quantum Computing Report</li>
                                 <li>IBM Quantum Blog</li>
@@ -105,7 +105,7 @@
                                 <li>Feedly</li>
                                 <li>Google Alerts</li>
                                 <li>Feedspot</li>
-                                <li>Newsletter scientifiques</li>
+                                <li>RSS Feed Reader</li>
                             </ul>
                         </div>
                         <div class="method-card" data-aos="fade-up" data-aos-delay="300">
@@ -114,7 +114,6 @@
                             <ul>
                                 <li>Veille quotidienne</li>
                                 <li>Synthèse hebdomadaire</li>
-                                <li>Rapport mensuel</li>
                             </ul>
                         </div>
                     </div>
@@ -140,13 +139,35 @@
                 <div class="latest-news" data-aos="fade-up">
                     <h3>Dernières Actualités</h3>
                     <div class="news-grid">
+                        <!-- 2025 News -->
                         <div class="method-card" data-aos="fade-up" data-aos-delay="100">
                             <i class="fas fa-newspaper"></i>
-                            <h4>Janvier 2024</h4>
-                            <p>IBM dévoile son nouveau processeur quantique de 1000 qubits</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm mt-3">Lire plus</a>
+                            <small class="article-date">15 février 2025</small>
+                            <h4 class="article-title">Révolution dans les Qubits Topologiques</h4>
+                            <p>Microsoft annonce une avancée majeure avec sa nouvelle puce quantique basée sur des qubits topologiques, promettant une meilleure stabilité et réduisant significativement les taux d'erreur. Cette innovation pourrait accélérer le développement d'ordinateurs quantiques commercialement viables.</p>
+                            <small class="source">Source: Nature Quantum Information</small>
+                            <a href="https://www.nature.com/npjqi/" class="btn btn-outline-primary btn-sm mt-3" target="_blank">Lire plus</a>
                         </div>
-                        <!-- Add more news cards -->
+
+                        <!-- 2024 News -->
+                        <div class="method-card" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-newspaper"></i>
+                            <small class="article-date">3 octobre 2024</small>
+                            <h4 class="article-title">IBM Atteint les 1000 Qubits</h4>
+                            <p>IBM dévoile son processeur quantique de 1000 qubits, atteignant un nouveau jalon dans la course à la suprématie quantique. Cette réalisation marque une étape importante vers des applications pratiques en chimie quantique et en optimisation.</p>
+                            <small class="source">Source: IBM Quantum Blog</small>
+                            <a href="https://research.ibm.com/blog/quantum" class="btn btn-outline-primary btn-sm mt-3" target="_blank">Lire plus</a>
+                        </div>
+
+                        <!-- 2023 News -->
+                        <div class="method-card" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-newspaper"></i>
+                            <small class="article-date">21 décembre 2023</small>
+                            <h4 class="article-title">Google Résout la Correction d'Erreur Quantique</h4>
+                            <p>Google démontre la correction d'erreur quantique à grande échelle, une première mondiale qui résout l'un des plus grands défis de l'informatique quantique. Cette avancée pourrait permettre la création d'ordinateurs quantiques plus fiables.</p>
+                            <small class="source">Source: Quantum Computing Report</small>
+                            <a href="https://quantumcomputingreport.com/" class="btn btn-outline-primary btn-sm mt-3" target="_blank">Lire plus</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -173,6 +194,7 @@
             <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
             <p>@ <span id="currentYear"></span> - <span class="neon_glow">Mouhamed Sarr</span></p>
             <em>"Working in the dark to serve in light" 👊🏽</em>
+            <a href="mentions_legales.html" target="_blank" class="legal-link">Mentions légales</a>
             <br /><br />
         </div>
     </section>
